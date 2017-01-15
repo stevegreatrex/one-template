@@ -31,10 +31,20 @@ This template is a for:
 1. Install react & react-dom: `npm install react react-dom --save`
 2. Install typings: `npm install @types/react @types/react-dom --save-dev`
 3. Create sample component (`src/ExampleComponent.tsx`)
+4. Add `index.tsx` entry point that: 
+   - Imports react & react-dom
+   - Locate an HTML element
+   - Renders `ExampleComponent` into it
 
-## Step 5: WebPack (dev)
+## Step 5: WebPack (production)
 
-## Step 6: WebPack (production)
+1. Install webpack: `npm install webpack --save-dev`
+2. Install babel with presets: `npm install babel-core babel-polyfill babel-preset-es2015 babel-preset-react --save-dev`
+3. Install babel & typescript loaders: `npm install babel-loader ts-loader --save-dev`
+4. Configure babel to use the installed preset (see `.babelrc`)
+5. Add `build` script to `package.json`
+
+## Step 6: WebPack (dev)
 
 ## Step 7: mocha
 
