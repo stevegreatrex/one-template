@@ -28,6 +28,10 @@ This template is a for:
 
 ## Step 4: React
 
+1. Install react & react-dom: `npm install react react-dom --save`
+2. Install typings: `npm install @types/react @types/react-dom --save-dev`
+3. Create sample component (`src/ExampleComponent.tsx`)
+
 ## Step 5: WebPack (dev)
 
 ## Step 6: WebPack (production)
@@ -35,3 +39,5 @@ This template is a for:
 ## Step 7: mocha
 
 ## Step 8: WallabyJs
+
+## Step 9: HTML Entry Point
