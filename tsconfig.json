@@ -1,0 +1,14 @@
+{
+	"compilerOptions": {
+		"module": "es6", //emit es6 modules
+		"target": "es6", //target es6 (babel will transpile)
+		"moduleResolution": "node", //use node modules
+		"baseUrl": "src", //look in /src for custom module
+		"sourceMap": true, //generate a source map
+		"outDir": "dist", //output generated files to /dist
+		"jsx": "preserve" //don't compile JSx/TSX to React.createElement(...)
+	},
+	"exclude": [
+		"node_modules" //don't try to compile node_modules
+	]
+}
