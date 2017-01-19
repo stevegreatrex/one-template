@@ -71,3 +71,6 @@ to implement this!
 9. Add `test` command to `package.json` to run tests using babel compiler
 
 ## Step 8: WallabyJs
+
+1. Install wallaby webpack support: `npm install wallaby-webpack --save-dev`
+1. Create `wallaby.js` with magic-content from wallaby team!
