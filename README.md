@@ -54,4 +54,20 @@ This template is a for:
 
 ## Step 7: mocha
 
+Note: primary development will be using WallabyJs.  Mocha is included to allow
+other devs & build servers to run tests.  I am certain there is a better way
+to implement this!
+
+1. Install mocha: `npm install mocha --save-dev`
+2. Install shouldjs: `npm install should --save-dev` (note: not using `chai` because it is not compliant with `"use strict"`)
+3. Install types for both: `npm install @types/should @types/mocha --save-dev`
+4. Add `require.d.ts` to support old-style `require('should')` in tests
+5. Create example tests `spec/Example.spec.ts`, `spec/ExampleComponent.spec.ts`
+6. Create `spec/allTests.js` to discover and automaticaly require every spec file
+7. Add new webpack configuration for test:
+   - use `allTests.js` as an entry point
+   - output to new `tests.js` file in temp folder
+8. Add `pretest` command to `package.json` that compiles the tests (targetting node to support mocha)
+9. Add `test` command to `package.json` to run tests using babel compiler
+
 ## Step 8: WallabyJs
