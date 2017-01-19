@@ -6,7 +6,9 @@
 		"baseUrl": "src", //look in /src for custom module
 		"sourceMap": true, //generate a source map
 		"outDir": "dist", //output generated files to /dist
-		"jsx": "preserve" //don't compile JSx/TSX to React.createElement(...)
+		"jsx": "preserve", //don't compile JSx/TSX to React.createElement(...)
+		"allowSyntheticDefaultImports": true //permit `import React, { Component }...` (note: React doesn't actually have a default import')
+
 	},
 	"exclude": [
 		"node_modules" //don't try to compile node_modules

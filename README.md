@@ -46,8 +46,12 @@ This template is a for:
 
 ## Step 6: WebPack (dev)
 
+1. Install dev server `npm install webpack-dev-server --save-dev`
+2. Add `webpack.dev.js` configuration
+2. Add `devServer.js` to run `WebpackDevServer`
+3. Add `start` script to `package.json`
+4. Add HTML entrypoint `index.html`
+
 ## Step 7: mocha
 
 ## Step 8: WallabyJs
-
-## Step 9: HTML Entry Point

@@ -3,9 +3,11 @@ const path = require('path');
 
 module.exports = {
   devtool: 'source-map', //use source maps for debugging
+  
   entry: [
-    'babel-polyfill', //polyfill support for ES6
-    'index.tsx' //define the app entry point
+    'babel-polyfill',
+    'webpack-dev-server/client?http://localhost:3000',
+    'index.tsx'
   ],
   output: {
     filename: 'app.js', //compile into app.js...
@@ -22,10 +24,5 @@ module.exports = {
     loaders: [
       { test: /\.tsx?$/, loaders: ['babel', 'ts-loader'] } //compile .ts and .tsx files using babel
     ]
-  },
-  plugins: [
-    new webpack.optimize.UglifyJsPlugin({ //minify output
-      compress: { warnings: false }
-    })
-  ]
+  }
 }
